@@ -1,0 +1,2 @@
+[24-Oct-2019 10:51:37 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\development\wp-content\themes\twentynineteen\inc\template-functions.php on line 16
+[24-Oct-2019 10:51:39 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\development\wp-includes\Requests\Transport\cURL.php on line 163
