@@ -1,0 +1,5 @@
+/wp-admin
+/wp-includes
+/wp-content/plugins/query-monitor
+/wp-content/plugins/debug-bar
+/wp-content/plugins/debug-bar-cron
