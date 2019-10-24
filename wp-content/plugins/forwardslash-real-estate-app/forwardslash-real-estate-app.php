@@ -40,11 +40,34 @@ if( !class_exists('ForwardslashRealEstateApp') ){
 		public function __construct()
 		{
 			add_action('plugins_loaded', array($this, 'boot'));
+			add_action('admin_init', array($this, 'checkAcfActive'));
 		}
 
 		public function boot()
 		{
 			$appAssets = new ForwardslashRealEstateAppAssets(); // app assets ( css, js, images )
+		}
+
+		public function checkAcfActive()
+		{
+			if( !is_plugin_active('advanced-custom-fields/acf.php') ){
+
+				add_action('admin_notices', array($this, 'realEstateAppNotice'));
+
+				deactivate_plugins( plugin_basename( __FILE__ ) ); 
+
+		        if ( isset( $_GET['activate'] ) ) {
+		            unset( $_GET['activate'] );
+		        }
+
+			} 
+		}
+
+		public function realEstateAppNotice()
+		{
+    		?>
+    		<div class="error"><p>Sorry, but Forwardslash Real Estate App Plugin requires the Advanced Custom Fields plugin to be installed and active.</p></div>
+    		<?php
 		}
 
 		public static function create()

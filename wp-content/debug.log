@@ -1,2 +1,18 @@
 [24-Oct-2019 10:51:37 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\development\wp-content\themes\twentynineteen\inc\template-functions.php on line 16
 [24-Oct-2019 10:51:39 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\development\wp-includes\Requests\Transport\cURL.php on line 163
+[24-Oct-2019 12:27:32 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\development\wp-content\plugins\advanced-custom-fields\includes\acf-utility-functions.php on line 155
+[24-Oct-2019 12:30:32 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\development\wp-content\plugins\query-monitor\classes\Plugin.php on line 8
+[24-Oct-2019 12:32:33 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\development\wp-content\plugins\debug-bar\panels\class-debug-bar-request.php on line 3
+[24-Oct-2019 13:24:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function is_plugin_active() in C:\xampp\htdocs\development\wp-content\plugins\forwardslash-real-estate-app\forwardslash-real-estate-app.php:47
+Stack trace:
+#0 C:\xampp\htdocs\development\wp-includes\class-wp-hook.php(286): ForwardslashRealEstateApp->boot('')
+#1 C:\xampp\htdocs\development\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\development\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\development\wp-settings.php(394): do_action('plugins_loaded')
+#4 C:\xampp\htdocs\development\wp-config.php(93): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\development\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\development\wp-admin\admin.php(34): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\development\wp-admin\plugins.php(10): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+
+Next Exception: Call to undefined function is_plugin_active() in C:\xampp\htdocs\development in C:\xampp\htdocs\development\wp-content\plugins\query-monitor\collectors\php_errors.php on line 86
