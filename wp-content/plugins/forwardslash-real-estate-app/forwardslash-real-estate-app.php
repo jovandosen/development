@@ -31,6 +31,8 @@ if( !defined('ABSPATH') ){
 	exit();
 }
 
+require 'include/ForwardslashRealEstateAppAssets.php';
+
 if( !class_exists('ForwardslashRealEstateApp') ){
 
 	class ForwardslashRealEstateApp
@@ -42,7 +44,7 @@ if( !class_exists('ForwardslashRealEstateApp') ){
 
 		public function boot()
 		{
-			echo 'Forwardslash Real Estate App works well and good.';
+			$appAssets = new ForwardslashRealEstateAppAssets(); // app assets ( css, js, images )
 		}
 
 		public static function create()
