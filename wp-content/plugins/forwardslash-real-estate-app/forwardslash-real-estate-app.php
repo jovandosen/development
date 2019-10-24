@@ -33,6 +33,8 @@ if( !defined('ABSPATH') ){
 
 require 'include/ForwardslashRealEstateAppAssets.php';
 require 'include/RealEstate.php';
+require 'include/RealEstateLocation.php';
+require 'include/RealEstateType.php';
 
 if( !class_exists('ForwardslashRealEstateApp') ){
 
@@ -48,6 +50,8 @@ if( !class_exists('ForwardslashRealEstateApp') ){
 		{
 			$appAssets = new ForwardslashRealEstateAppAssets(); // app assets ( css, js, images )
 			$realEstate = new RealEstate(); // custom post type Real Estate
+			$realEstateLocation = new RealEstateLocation(); // taxonomy Location
+			$realEstateType = new RealEstateType(); // taxonomy Type
 		}
 
 		public function checkAcfActive()
