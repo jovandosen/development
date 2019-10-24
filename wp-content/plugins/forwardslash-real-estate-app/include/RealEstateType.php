@@ -25,7 +25,7 @@ if( !class_exists('RealEstateType') ){
 		        'labels'            => $labels,
 		        'show_ui'           => true,
 		        'show_admin_column' => true,
-		        'rewrite'           => array( 'slug' => 'type' )
+		        'rewrite'           => array( 'slug' => 'estates' )
 		    );
 
     		register_taxonomy( 'type', 'real-estates', $args );
