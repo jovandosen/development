@@ -16,3 +16,5 @@ Stack trace:
 #8 {main}
 
 Next Exception: Call to undefined function is_plugin_active() in C:\xampp\htdocs\development in C:\xampp\htdocs\development\wp-content\plugins\query-monitor\collectors\php_errors.php on line 86
+[25-Oct-2019 08:00:57 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\development\wp-content\plugins\advanced-custom-fields\includes\upgrades.php on line 14
+[25-Oct-2019 08:04:00 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\development\wp-includes\functions.php on line 5573
