@@ -17,4 +17,11 @@ function loadRealEstateThemeAssets()
 
 add_action('wp_enqueue_scripts', 'loadRealEstateThemeAssets');
 
+function registerMenus() 
+{
+  	register_nav_menus(array('header-menu' => __( 'Header Menu' )));
+}
+
+add_action('init', 'registerMenus');
+
 ?>
