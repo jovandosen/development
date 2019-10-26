@@ -24,4 +24,13 @@
 
 	</div>
 
+	<div id="custom-form-container">
+
+		<form>
+			<input type="text" name="title" id="title" />
+			<button type="button" id="update-real-estate">UPDATE</button>
+		</form>
+		
+	</div>
+
 <?php get_footer(); ?>

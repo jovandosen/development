@@ -22,3 +22,21 @@ Next Exception: Call to undefined function is_plugin_active() in C:\xampp\htdocs
 [26-Oct-2019 08:01:20 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\development\wp-admin\includes\user.php on line 16
 [26-Oct-2019 08:03:20 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\development\wp-content\plugins\advanced-custom-fields\includes\acf-input-functions.php on line 14
 [26-Oct-2019 10:03:36 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\development\wp-includes\class-wp-post-type.php on line 17
+[26-Oct-2019 11:22:52 UTC] PHP Notice:  Undefined variable: request in C:\xampp\htdocs\development\wp-content\themes\forwardslash-real-estate-theme\functions.php on line 29
+[26-Oct-2019 11:22:52 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM wp_posts  WHERE 1=1' at line 1 for query SELECT    FROM wp_posts  WHERE 1=1     made by require('wp-blog-header.php'), wp, WP->main, WP->query_posts, WP_Query->query, WP_Query->get_posts
+[26-Oct-2019 11:47:25 UTC] WordPress database error Unknown column 'post.post_title' in 'where clause' for query SELECT SQL_CALC_FOUND_ROWS  wp_posts.ID FROM wp_posts  WHERE 1=1  AND post.post_title LIKE '%Two%'  ORDER BY wp_posts.post_date DESC LIMIT 0, 10 made by require('wp-blog-header.php'), wp, WP->main, WP->query_posts, WP_Query->query, WP_Query->get_posts
+[26-Oct-2019 11:48:24 UTC] WordPress database error Unknown column 'wp_post.post_title' in 'where clause' for query SELECT SQL_CALC_FOUND_ROWS  wp_posts.ID FROM wp_posts  WHERE 1=1  AND wp_post.post_title LIKE '%Two%'  ORDER BY wp_posts.post_date DESC LIMIT 0, 10 made by require('wp-blog-header.php'), wp, WP->main, WP->query_posts, WP_Query->query, WP_Query->get_posts
+[26-Oct-2019 11:51:42 UTC] WordPress database error Unknown column 'post.post_title' in 'where clause' for query SELECT SQL_CALC_FOUND_ROWS  wp_posts.ID FROM wp_posts  WHERE 1=1  AND post.post_title LIKE '%Two%'  ORDER BY wp_posts.post_date DESC LIMIT 0, 10 made by require('wp-blog-header.php'), wp, WP->main, WP->query_posts, WP_Query->query, WP_Query->get_posts
+[26-Oct-2019 14:41:37 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_create_nonce() in C:\xampp\htdocs\development\wp-content\plugins\forwardslash-real-estate-app\forwardslash-real-estate-app.php:47
+Stack trace:
+#0 C:\xampp\htdocs\development\wp-content\plugins\forwardslash-real-estate-app\forwardslash-real-estate-app.php(86): ForwardslashRealEstateApp->__construct()
+#1 C:\xampp\htdocs\development\wp-content\plugins\forwardslash-real-estate-app\forwardslash-real-estate-app.php(90): ForwardslashRealEstateApp::create()
+#2 C:\xampp\htdocs\development\wp-settings.php(362): include_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\development\wp-config.php(93): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\development\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\development\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\development\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+
+Next Exception: Call to undefined function wp_create_nonce() in C:\xampp\htdocs\d in C:\xampp\htdocs\development\wp-content\plugins\query-monitor\collectors\php_errors.php on line 86
+[26-Oct-2019 14:58:48 UTC] PHP Notice:  Undefined index: title in C:\xampp\htdocs\development\wp-content\plugins\forwardslash-real-estate-app\include\ForwardslashRealEstateAppAssets.php on line 35
