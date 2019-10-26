@@ -35,8 +35,23 @@ class ForwardslashRealEstateAppAssets
 	public function updateRealEstateWithAjax()
 	{
 		check_ajax_referer( 'real_estate_nonce' );
-		echo $_POST['titleData'];
-		echo "WELL AND GOOD.";
+
+		$recordTitle = $_POST['recordTitle'];
+
+		$recordID = $_POST['recordID'];
+
+		$record = array(
+      		'ID'           => $recordID,
+      		'post_title'   => $recordTitle,
+  		);
+
+  		$result = wp_update_post($record);
+
+  		if($result){
+  			echo "success";
+  		}
+
+		wp_die();
 	}
 }
 

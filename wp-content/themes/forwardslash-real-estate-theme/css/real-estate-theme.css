@@ -21,7 +21,7 @@ ul#menu-header-menu-links li a {
 	color: white;
 }
 
-div.container-for-real-estates, h1.description-data, div.container-for-locations, div.container-for-types {
+div.container-for-real-estates, h1.description-data, div.container-for-locations, div.container-for-types, div.container-for-real-estate {
 	margin-left: 30px;
 	margin-top: 20px;
 } 
@@ -39,4 +39,12 @@ div#search-real-estates, div.container {
 div#custom-form-container {
 	margin-top: 50px;
 	margin-left: 30px;
+}
+
+div#real-estate-update-container {
+	margin-top: 20px;
+}
+
+button#update-real-estate {
+	padding: 5px;
 }

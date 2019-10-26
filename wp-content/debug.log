@@ -40,3 +40,14 @@ Stack trace:
 
 Next Exception: Call to undefined function wp_create_nonce() in C:\xampp\htdocs\d in C:\xampp\htdocs\development\wp-content\plugins\query-monitor\collectors\php_errors.php on line 86
 [26-Oct-2019 14:58:48 UTC] PHP Notice:  Undefined index: title in C:\xampp\htdocs\development\wp-content\plugins\forwardslash-real-estate-app\include\ForwardslashRealEstateAppAssets.php on line 35
+[26-Oct-2019 16:28:40 UTC] PHP Fatal error:  Uncaught ParseError: syntax error, unexpected '(', expecting ';' in C:\xampp\htdocs\development\wp-content\themes\forwardslash-real-estate-theme\single-real-estates.php:47
+Stack trace:
+#0 C:\xampp\htdocs\development\wp-blog-header.php(19): require_once()
+#1 C:\xampp\htdocs\development\index.php(17): require('C:\\xampp\\htdocs...')
+#2 {main}
+
+Next Exception: syntax error, unexpected '(', expecting ';' in C:\xampp\htdocs\development\wp-content\plugins\query-monitor\collectors\php_errors.php:86
+Stack trace:
+#0 [internal function]: QM_Collector_PHP_Errors->exception_handler(Object(ParseError))
+#1 {main}
+  thrown in C:\xampp\htdocs\development\wp-content\plugins\query-monitor\collectors\php_errors.php on line 86
