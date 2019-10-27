@@ -48,3 +48,19 @@ div#real-estate-update-container {
 button#update-real-estate {
 	padding: 5px;
 }
+
+div#locations-container {
+	margin-top: 20px;
+}
+
+div.location-wrapper, div.type-wrapper {
+	margin-left: 40px;
+}
+
+p#location-text, p#type-text {
+	margin-bottom: 5px;
+}
+
+div#types-container {
+	margin-top: 10px;
+}

@@ -51,3 +51,16 @@ Stack trace:
 #0 [internal function]: QM_Collector_PHP_Errors->exception_handler(Object(ParseError))
 #1 {main}
   thrown in C:\xampp\htdocs\development\wp-content\plugins\query-monitor\collectors\php_errors.php on line 86
+[27-Oct-2019 07:48:19 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\development\wp-content\plugins\query-monitor\collectors\environment.php on line 8
+[27-Oct-2019 07:48:55 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\development\wp-admin\includes\class-wp-screen.php on line 15
+[27-Oct-2019 07:49:28 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\development\wp-admin\includes\class-wp-comments-list-table.php on line 18
+[27-Oct-2019 08:40:38 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function get_the_terms(), 1 passed in C:\xampp\htdocs\development\wp-content\themes\forwardslash-real-estate-theme\single-real-estates.php on line 25 and exactly 2 expected in C:\xampp\htdocs\development\wp-includes\category-template.php:1225
+Stack trace:
+#0 C:\xampp\htdocs\development\wp-content\themes\forwardslash-real-estate-theme\single-real-estates.php(25): get_the_terms(23)
+#1 C:\xampp\htdocs\development\wp-includes\template-loader.php(78): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\development\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\development\index.php(17): require('C:\\xampp\\htdocs...')
+#4 {main}
+
+Next Exception: Too few arguments to function get_the_terms(), 1 passed in C:\xampp\htdocs\development\wp-content\themes\forwardslash-real-estate-theme\single-real-estates.php on line 25 and exactly 2 expected in C:\xampp\htdocs\development\wp-content\plugins\query-monitor\collectors\php_errors.php:86
+Stack t in C:\xampp\htdocs\development\wp-content\plugins\query-monitor\collectors\php_errors.php on line 86
