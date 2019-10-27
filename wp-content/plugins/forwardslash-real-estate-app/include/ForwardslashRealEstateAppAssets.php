@@ -36,18 +36,30 @@ class ForwardslashRealEstateAppAssets
 	{
 		check_ajax_referer( 'real_estate_nonce' );
 
-		$recordTitle = $_POST['recordTitle'];
+  		$recordData = [];
 
-		$recordID = $_POST['recordID'];
+  		parse_str($_POST['details'], $recordData);
 
-		$record = array(
+  		$recordTitle = $recordData['title'];
+
+  		$recordID = $recordData['recordID'];
+
+  		$recordLocation = (int) $recordData['location'];
+
+  		$recordType = (int) $recordData['type'];
+
+  		$record = array(
       		'ID'           => $recordID,
       		'post_title'   => $recordTitle,
   		);
 
   		$result = wp_update_post($record);
 
-  		if($result){
+  		$recordLocationResult = wp_set_object_terms($recordID, $recordLocation, 'location');
+
+  		$recordTypeResult = wp_set_object_terms($recordID, $recordType, 'type');
+
+  		if($result && $recordLocationResult && $recordTypeResult){
   			echo "success";
   		}
 

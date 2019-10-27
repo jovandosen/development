@@ -58,7 +58,7 @@
 
 				<div id="custom-form-container">
 
-					<form>
+					<form id="real-estate-form-data">
 
 						<div>
 							<label for="title">Title:</label>
@@ -70,7 +70,7 @@
 							<?php foreach($locations as $key => $location): ?>
 
 								<div class="location-wrapper">
-								<input type="checkbox" name="<?php echo $location->slug; ?>" value="<?php echo $location->term_id; ?>" 
+								<input type="radio" name="location" value="<?php echo $location->term_id; ?>" 
 									<?php echo (isset($realEstateLocationID) && !empty($realEstateLocationID) && $realEstateLocationID == $location->term_id) ? 'checked' : ''; ?>><?php echo $location->name; ?>
 								</div>
 
@@ -82,7 +82,7 @@
 							<?php foreach($types as $key => $type): ?>
 
 								<div class="type-wrapper">
-									<input type="checkbox" name="<?php echo $type->slug; ?>" value="<?php echo $type->term_id; ?>" 
+									<input type="radio" name="type" value="<?php echo $type->term_id; ?>" 
 										<?php echo (isset($realEstateTypeID) && !empty($realEstateTypeID) && $realEstateTypeID == $type->term_id) ? 'checked' : ''; ?>><?php echo $type->name; ?>
 								</div>
 

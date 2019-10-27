@@ -1,18 +1,16 @@
 jQuery(document).ready(function($){
 
-	$("#update-real-estate").click(function(){
-		
-		var title = $("#title").val();
-		var id = $("#recordID").val();
+	$("#update-real-estate").on("click", function(){
+
+		var formData = $("#real-estate-form-data").serialize();
 
 		$.post(real_estate_obj.ajax_url, {
 			_ajax_nonce: real_estate_obj.nonce,
 			action: "real_estate",
-			recordTitle: title,
-			recordID: id 
+			details: formData
 		}, function(data){
 			if(data == "success"){
-				alert("Real Estate updated successfully.");
+				alert('Real Estate updated successfully.');
 			}
 		});
 
