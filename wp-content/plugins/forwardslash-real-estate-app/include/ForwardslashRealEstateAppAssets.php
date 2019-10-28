@@ -40,6 +40,8 @@ class ForwardslashRealEstateAppAssets
 
   		parse_str($_POST['details'], $recordData);
 
+  		$recordSubtitle = $recordData['subtitle'];
+
   		$recordTitle = $recordData['title'];
 
   		$recordID = $recordData['recordID'];
@@ -59,7 +61,9 @@ class ForwardslashRealEstateAppAssets
 
   		$recordTypeResult = wp_set_object_terms($recordID, $recordType, 'type');
 
-  		if($result && $recordLocationResult && $recordTypeResult){
+  		$recordSubtitleResult = update_field('real_estate_subtitle', $recordSubtitle, $recordID);
+
+  		if($result && $recordLocationResult && $recordTypeResult && $recordSubtitleResult){
   			echo "success";
   		}
 

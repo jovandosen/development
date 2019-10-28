@@ -89,6 +89,11 @@
 							<input type="text" name="title" id="title" value="<?php the_title(); ?>" />
 						</div>
 
+						<div id="subtitle-container">
+							<label for="subtitle">Subtitle:</label>
+							<input type="text" name="subtitle" id="subtitle" value="<?php the_field('real_estate_subtitle'); ?>">
+						</div>
+
 						<div id="locations-container">
 							<p id="location-text">Locations:</p>
 							<?php foreach($locations as $key => $location): ?>
