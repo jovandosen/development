@@ -12,24 +12,24 @@ if( !class_exists('RealEstate') ){
 		public function registerRealEstate()
 		{
 			$labels = array(
-		        'name'                => _x( 'Real Estates', 'Post Type General Name', 'development' ),
-		        'singular_name'       => _x( 'Real Estate', 'Post Type Singular Name', 'development' ),
-		        'menu_name'           => __( 'Real Estates', 'development' ),
-		        'parent_item_colon'   => __( 'Parent Real Estate', 'development' ),
-		        'all_items'           => __( 'All Real Estates', 'development' ),
-		        'view_item'           => __( 'View Real Estate', 'development' ),
-		        'add_new_item'        => __( 'Add New Real Estate', 'development' ),
-		        'add_new'             => __( 'Add New', 'development' ),
-		        'edit_item'           => __( 'Edit Real Estate', 'development' ),
-		        'update_item'         => __( 'Update Real Estate', 'development' ),
-		        'search_items'        => __( 'Search Real Estate', 'development' ),
-		        'not_found'           => __( 'Not Found', 'development' ),
-		        'not_found_in_trash'  => __( 'Not found in Trash', 'development' )
+		        'name'                => _x( 'Real Estates', 'Post Type General Name', 'forwardslash-real-estate-theme' ),
+		        'singular_name'       => _x( 'Real Estate', 'Post Type Singular Name', 'forwardslash-real-estate-theme' ),
+		        'menu_name'           => __( 'Real Estates', 'forwardslash-real-estate-theme' ),
+		        'parent_item_colon'   => __( 'Parent Real Estate', 'forwardslash-real-estate-theme' ),
+		        'all_items'           => __( 'All Real Estates', 'forwardslash-real-estate-theme' ),
+		        'view_item'           => __( 'View Real Estate', 'forwardslash-real-estate-theme' ),
+		        'add_new_item'        => __( 'Add New Real Estate', 'forwardslash-real-estate-theme' ),
+		        'add_new'             => __( 'Add New', 'forwardslash-real-estate-theme' ),
+		        'edit_item'           => __( 'Edit Real Estate', 'forwardslash-real-estate-theme' ),
+		        'update_item'         => __( 'Update Real Estate', 'forwardslash-real-estate-theme' ),
+		        'search_items'        => __( 'Search Real Estate', 'forwardslash-real-estate-theme' ),
+		        'not_found'           => __( 'Not Found', 'forwardslash-real-estate-theme' ),
+		        'not_found_in_trash'  => __( 'Not found in Trash', 'forwardslash-real-estate-theme' )
 	    	);
 
 		    $args = array(
-		        'label'               => __( 'real-estates', 'development' ),
-		        'description'         => __( 'Real Estate news and reviews', 'development' ),
+		        'label'               => __( 'real-estates', 'forwardslash-real-estate-theme' ),
+		        'description'         => __( 'Real Estate news and reviews', 'forwardslash-real-estate-theme' ),
 		        'labels'              => $labels,
 		        'supports'            => array( 'title', 'editor', 'thumbnail' ),
 		        'taxonomies'          => array(),
