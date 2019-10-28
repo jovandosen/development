@@ -2,23 +2,47 @@
 
 	<h1 class="description-data">Real Estate:</h1>
 
+	<div class="add-break-line"></div>
+
 	<div class="container-for-real-estate">
 		
+		<?php if(have_posts()): ?>
+
+			<?php while(have_posts()): ?>
+
+				<?php the_post(); ?>
+
+				<?php $realEstateID = get_the_ID(); ?>
+
+				<div id="real-estate-title">
+					<h2><?php the_title(); ?></h2>
+				</div>
+
+				<div id="real-estate-content">
+					<p><?php the_content(); ?></p>
+				</div>
+
+				<div id="real-estate-subtitle">
+					<h3><?php the_field('real_estate_subtitle'); ?></h3>
+				</div>
+
+				<div id="real-estate-image">
+					<?php the_post_thumbnail('medium'); ?>
+				</div>
+
+				<div id="real-estate-gallery-image">
+					<?php if( get_field('real_estate_gallery') ): ?>
+						<img src="<?php the_field('real_estate_gallery'); ?>" />
+					<?php endif; ?>
+				</div>
+
+			<?php endwhile; ?>	
+
+		<?php endif; ?>	
+
+		<div class="add-break-line-two"></div>
+
 		<?php
-
-			if(have_posts()){
-				while(have_posts()){
-					the_post(); // get the real estate data
-					the_title(); // real estate title
-					the_content(); // real estate content
-					the_post_thumbnail('medium'); // real estate image
-
-					$realEstateID = get_the_ID();
-
-				}
-			} else {
-				echo "No real estate data found";
-			}
 
 			// Location logic
 

@@ -36,6 +36,8 @@ require 'include/RealEstate.php';
 require 'include/RealEstateLocation.php';
 require 'include/RealEstateType.php';
 
+require __DIR__ . '/../advanced-custom-fields/acf.php';
+
 if( !class_exists('ForwardslashRealEstateApp') ){
 
 	class ForwardslashRealEstateApp
@@ -44,6 +46,7 @@ if( !class_exists('ForwardslashRealEstateApp') ){
 		{
 			add_action('plugins_loaded', array($this, 'boot'));
 			add_action('admin_init', array($this, 'checkAcfActive'));
+			add_filter('acf/settings/url', array($this, 'includeAcfSettings'));
 		}
 
 		public function boot()
@@ -74,6 +77,11 @@ if( !class_exists('ForwardslashRealEstateApp') ){
     		?>
     		<div class="error"><p>Sorry, but Forwardslash Real Estate App Plugin requires the Advanced Custom Fields plugin to be installed and active.</p></div>
     		<?php
+		}
+
+		public function includeAcfSettings()
+		{
+			return __DIR__ . '/../advanced-custom-fields/acf.php';
 		}
 
 		public static function create()

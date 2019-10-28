@@ -64,3 +64,18 @@ p#location-text, p#type-text {
 div#types-container {
 	margin-top: 10px;
 }
+
+div.add-break-line {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-bottom: 2px solid black;
+	margin-left: 32px;
+	width: 270px;
+}
+
+div.add-break-line-two {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-bottom: 2px solid black;
+	width: 270px;
+}
