@@ -89,3 +89,4 @@ Stack t in C:\xampp\htdocs\development\wp-content\plugins\query-monitor\collecto
 [28-Oct-2019 08:51:56 UTC] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\development\wp-content\themes\forwardslash-real-estate-theme\single-real-estates.php on line 65
 [28-Oct-2019 10:59:34 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\development\wp-admin\includes\template.php on line 12
 [28-Oct-2019 10:59:39 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\development\wp-content\plugins\query-monitor\collectors\environment.php on line 284
+[28-Oct-2019 15:01:41 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\development\wp-admin\includes\media.php on line 16

@@ -7,6 +7,7 @@ if( !class_exists('RealEstate') ){
 		public function __construct()
 		{
 			add_action('init', array($this, 'registerRealEstate'));
+			// add_filter('post_type_link', array($this, 'filterRealEstateLinks'), 1, 2);
 		}
 
 		public function registerRealEstate()
@@ -45,10 +46,29 @@ if( !class_exists('RealEstate') ){
 		        'exclude_from_search' => false,
 		        'publicly_queryable'  => true,
 		        'capability_type'     => 'page'
+		        /*'rewrite'             => array('slug' => 'estates/%type%', 'with_front' => false)*/
 		    );
 
     		register_post_type( 'real-estates', $args );
 		}
+
+		/*public function filterRealEstateLinks($post_link, $post)
+		{
+			if ( is_object( $post ) && $post->post_type == 'real-estates' ){
+
+        		$terms = wp_get_object_terms( $post->ID, 'type' );
+
+        		if( $terms ){
+
+            		$post_link = str_replace( '%type%' , $terms[0]->slug , $post_link );
+            		return $post_link;
+
+        		}
+
+    		}
+
+    		return $post_link;
+		}*/
 	}
 
 }
