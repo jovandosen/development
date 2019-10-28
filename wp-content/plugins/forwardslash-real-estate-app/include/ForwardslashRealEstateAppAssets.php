@@ -63,8 +63,17 @@ class ForwardslashRealEstateAppAssets
 
   		$recordSubtitleResult = update_field('real_estate_subtitle', $recordSubtitle, $recordID);
 
-  		if($result && $recordLocationResult && $recordTypeResult && $recordSubtitleResult){
-  			echo "success";
+  		if($result || $recordLocationResult || $recordTypeResult || $recordSubtitleResult){
+
+  			$newData = new stdClass();
+
+  			$newData->titleValue = $recordTitle;
+  			$newData->subtitleValue = $recordSubtitle;
+  			$newData->status = "success";
+
+  			$jsonData = json_encode($newData);
+  			
+  			echo $jsonData;
   		}
 
 		wp_die();

@@ -9,9 +9,17 @@ jQuery(document).ready(function($){
 			action: "real_estate",
 			details: formData
 		}, function(data){
-			if(data == "success"){
+			
+			var realEstateObject = JSON.parse(data);
+
+			$("#real-estate-title h2").text(realEstateObject.titleValue);
+
+			$("#real-estate-subtitle h3").text(realEstateObject.subtitleValue);
+
+			if( realEstateObject.status == "success" ){
 				alert('Real Estate updated successfully.');
 			}
+
 		});
 
 	});
